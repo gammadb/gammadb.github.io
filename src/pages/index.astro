@@ -45,17 +45,16 @@ const metadata = {
 
   <!-- Features Widget *************** -->
 
-  <Features
-    id="features"
-    tagline="Features"
-    title=""
-    subtitle=""
+  <Features2
+    title="Fully self-developed Optimization, Execution, and Storage Engines"
+    subtitle="Comprehensively enhancing PostgreSQL's capabilities"
+    tagline="Components"
     items={[
       {
         title: 'Cost-based Vectorized Optimization',
         description:
           'The optimizer delivers more efficient execution plans due to its support for cost-based vectorized path search.',
-        icon: 'tabler:brand-tailwind',
+        icon: 'flat-color-icons:approval',
       },
       {
         title: 'Vectorized Execution',
@@ -67,23 +66,28 @@ const metadata = {
         title: 'Columar Storage Engine',
         description:
           'Using TOAST technology to implement a columnar storage engine, achieving a data compression ratio improvement of 3-5 times.',
-        icon: 'tabler:list-check',
+        icon: 'flat-color-icons:document',
       },
       {
         title: 'Columnar Index For HOT',
         description:
           'By building a columnar index as a covering index on a heap-organized table, AP-style SQL queries experience a 1000x performance improvement while TP performance remains essentially unchanged.',
-        icon: 'tabler:bulb',
+        icon: 'flat-color-icons:database',
       },
     ]}
-  />
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
 
   <!-- Content Widget **************** -->
 
   <Content
     isReversed
     tagline="Inside GammaDB"
-    title="Native Analytical PostgreSQL"
+    title="Performance Boost 1000x!"
     items={[
       {
         title: 'Decoupling Storage and Compute',
@@ -97,13 +101,13 @@ const metadata = {
       },
     ]}
     image={{
-      src: '~/assets/images/framework.png',
+      src: '~/assets/images/framework.jpg',
       alt: 'Colorful Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Greater Imaginative Potential</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Native Analytical PostgreSQL</h3>
+      The future of AI and distributed capabilities looks promising
     </Fragment>
 
     <Fragment slot="bg">
