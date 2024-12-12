@@ -42,6 +42,47 @@ const metadata = {
   </Hero>
 
   <!-- Note Widget ******************* -->
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    tagline="The architecture of GammaDB"
+    title="Performance Boost 1000x!"
+    items={[
+      {
+        title: 'One-click transformation',
+        description:
+          'Leveraging PostgreSQL\'s extension capabilities, achieve one-click transformation into an analytical engine, without relying on any third-party databases.',
+      },
+      {
+        title: 'Decoupling Storage and Compute',
+        description:
+          'Leveraging S3 to offload data to object storage, achieving multi-dimensional separation of compute, transactions, metadata, and data.',
+      },
+      {
+        title: 'AI and distributed execution',
+        description:
+          'The capabilities of AI in DB and DB in AI are already on our roadmap, and the ability for distributed execution is also under development. The architecture of GammaDB will continue to be refined and improved.',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/framework.jpg',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Native Analytical PostgreSQL</h3>
+      The future of AI and distributed capabilities looks promising
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+
 
   <!-- Features Widget *************** -->
 
@@ -80,42 +121,6 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Features2>
-
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    tagline="Inside GammaDB"
-    title="Performance Boost 1000x!"
-    items={[
-      {
-        title: 'Decoupling Storage and Compute',
-        description:
-          'Leveraging S3 to offload data to object storage, achieving multi-dimensional separation of compute, transactions, metadata, and data.',
-      },
-      {
-        title: 'One-click transformation',
-        description:
-          'Leveraging PostgreSQL\'s extension capabilities, achieve one-click transformation into an analytical engine, without relying on any third-party databases.',
-      },
-    ]}
-    image={{
-      src: '~/assets/images/framework.jpg',
-      alt: 'Colorful Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Native Analytical PostgreSQL</h3>
-      The future of AI and distributed capabilities looks promising
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
 
 
   <!-- Stats Widget ****************** -->
