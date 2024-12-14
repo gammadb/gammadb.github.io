@@ -2,12 +2,8 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
-import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
@@ -29,15 +25,15 @@ const metadata = {
         target: '_blank',
         icon: 'tabler:download',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Learn more', href: '#' },
     ]}
   >
     <Fragment slot="title">
-      One-Click Transform PostgreSQL to Native Analytical Database
+      One-Click Transform PostgreSQL to <span class='text-white'>Native Analytical Database</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-		Cost-based Optimization, Vectorized Execution, Columnar Storage Engine! 
+		GammaDB is a PostgreSQL extension with self-developed vectorized execution and column storage, enhancing performance without needing third-party analytical engines. 
     </Fragment>
   </Hero>
 
